@@ -26,15 +26,41 @@
         <!-- header end -->
     </header>
     <main>
-        <section class="container">
-            <!-- add to list -->
-            <div>
-                <div class="my-3">
-                    <input type="text" class="form-control" id="addTask" placeholder="Add a new task">
+        <section class="container mt-3">
+            <div class="row">
+                <!-- add to list -->
+                <div class="col-9 my-3">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="addTask" placeholder="Add a new task">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <!-- add to list -->
+                <!-- info table -->
+                <div class="col">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Total Task:</td>
+                                <td> 0 </td>
+                            </tr>
+                            <tr>
+                                <td>Done:</td>
+                                <td> 0 </td>
+                            </tr>
+                            <tr>
+                                <td>Panding:</td>
+                                <td> 0 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- info table -->
             </div>
-            <!-- add to list -->
         </section>
     </main>
 </body>

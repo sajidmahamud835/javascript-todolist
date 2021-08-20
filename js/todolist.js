@@ -8,7 +8,7 @@ const taskList = document.getElementById('task-list');
 ---------------------- */
 
 //Event handeler
-function addTaskButtonAction() {
+function addTask() {
     console.log('add task button action started')
 
     const ul = document.createElement('ul');
@@ -40,13 +40,13 @@ function addTaskButtonAction() {
 
 addTaskButton.addEventListener('click', function () {
     console.log('add task button clicked')
-    addTaskButtonAction();
+    addTask();
 });
 
 
 addTaskInput.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
         console.log('enter key pressed')
-        addTaskButtonAction();
+        addTask();
     }
 });

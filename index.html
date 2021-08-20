@@ -19,7 +19,6 @@
                 <a class="navbar-brand">ToDoList</a>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </nav>
@@ -32,14 +31,32 @@
                 <div class="col-9 my-3">
                     <div class="row">
                         <div class="col-8">
-                            <input type="text" class="form-control" id="addTask" placeholder="Add a new task">
+                            <input type="text" id="add-task" class="form-control" placeholder="Add a new task">
                         </div>
                         <div class="col">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" id="submit-task" class="btn btn-primary">Add Task</button>
                         </div>
                     </div>
+                    <!-- add to list -->
+                    <!-- show the lists -->
+                    <div class="mt-3">
+                        <ul class="list-group">
+                            <li class="list-group-item disabled" aria-disabled="true"><input type="checkbox" name="done"
+                                    id="done" checked> <span><del>A disabled item</del></span> </li>
+                            <li class="list-group-item"><input type="checkbox" name="done" id="done"> <span>A enabled
+                                    item</span></li>
+                            <li class="list-group-item"><input type="checkbox" name="done" id="done"> <span>A enabled
+                                    item</span></li>
+                            <li class="list-group-item"><input type="checkbox" name="done" id="done"> <span>A enabled
+                                    item</span></li>
+                            <li class="list-group-item"><input type="checkbox" name="done" id="done"> <span>A enabled
+                                    item</span></li>
+                            <li class="list-group-item"><input type="checkbox" name="done" id="done"> <span>A enabled
+                                    item</span></li>
+                        </ul>
+                    </div>
+                    <!-- show the lists -->
                 </div>
-                <!-- add to list -->
                 <!-- info table -->
                 <div class="col">
                     <table class="table">

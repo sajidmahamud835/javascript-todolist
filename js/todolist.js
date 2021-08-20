@@ -31,6 +31,9 @@ function addTaskButtonAction() {
 
     taskList.appendChild(ul)
 
+    // clear input field
+    addTaskInput.value = ''
+
 }
 
 //Event listener
@@ -38,4 +41,12 @@ function addTaskButtonAction() {
 addTaskButton.addEventListener('click', function () {
     console.log('add task button clicked')
     addTaskButtonAction();
+});
+
+
+addTaskInput.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+        console.log('enter key pressed')
+        addTaskButtonAction();
+    }
 });
